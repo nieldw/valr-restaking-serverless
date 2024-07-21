@@ -2,7 +2,7 @@ const crypto = require('crypto');
 
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
-const stakingCurrencies = ['SOL', 'AVAX'];
+const stakingCurrencies = ['SOL', 'AVAX', 'TRX'];
 
 function signRequest(apiSecret, timestamp, verb, path, body = '') {
     return crypto
